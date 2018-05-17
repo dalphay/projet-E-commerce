@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(196, 193, 193);
+    height: 300px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none; 
+    color: black;
+    margin-bottom: 12px;
+    font-size: 16px;
+
+    /* font-weight: bold; */
+    
+}

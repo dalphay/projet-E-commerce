@@ -1,0 +1,12 @@
+
+{
+    "Produit" : [
+        {"id": 1, "name": "Produit 1", "prix": "250.50", "description": "Produit 1 description", "category": "Montre homme", "marque": "Festina"},
+        {"id": 2, "name": "Produit 2", "prix": "150.20", "description": "Produit 2 description", "category": "Montre homme", "marque": "Festina"},
+        {"id": 3, "name": "Produit 3", "prix": "130.50", "description": "Produit 3 description", "category": "Montre femme", "marque": "Festina"},
+        {"id": 4, "name": "Produit 4", "prix": "280.40", "description": "Produit 4 description", "category": "Montre homme", "marque": "Festina"},
+        {"id": 5, "name": "Produit 5", "prix": "310.99", "description": "Produit 5 description", "category": "Montre femme", "marque": "Festina"},
+        {"id": 6, "name": "Produit 6", "prix": "350.70", "description": "Produit 6 description", "category": "Montre femme", "marque": "Festina"}
+    ]
+}
+

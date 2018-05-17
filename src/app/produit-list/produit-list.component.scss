@@ -1,0 +1,18 @@
+.contenair {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:  wrap;    
+}
+
+.product {
+    max-width: 300px;
+    margin-bottom: 15px;
+    background-color: #c10a27;
+    color: white;
+    font-size: 20px; 
+}
+
+.cursor {
+    cursor: pointer;
+}
+
