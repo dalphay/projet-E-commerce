@@ -4,12 +4,12 @@
         {"id": 1, "name": "Montre homme", "prix": "250.50", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-festina-homme.jpg"},
         {"id": 2, "name": "Montre homme", "prix": "150.20", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-homme.jpg"},
         {"id": 3, "name": "Montre femme", "prix": "130.50", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
-        {"id": 4, "name": "Montre homme", "prix": "280.40", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre.jpg"},
+        {"id": 4, "name": "Montre homme", "prix": "280.40", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-festina-homme.jpg"},
         {"id": 5, "name": "Montre femme", "prix": "310.99", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
         {"id": 6, "name": "Montre femme", "prix": "350.70", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
         {"id": 7, "name": "Montre homme", "prix": "150.20", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-homme.jpg"},
         {"id": 8, "name": "Montre femme", "prix": "130.50", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
-        {"id": 9, "name": "Montre homme", "prix": "280.40", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre.jpg"},
+        {"id": 9, "name": "Montre homme", "prix": "280.40", "description": "Description", "category": "Montre homme", "marque": "maserati", "images": "montre-maserati-potenza-auto.jpg"},
         {"id": 10, "name": "Montre femme", "prix": "310.99", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
         {"id": 11, "name": "Montre femme", "prix": "350.70", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
         {"id": 12, "name": "Montre homme", "prix": "250.50", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-festina-homme.jpg"},
@@ -23,7 +23,9 @@
         {"id": 20, "name": "Montre homme", "prix": "280.40", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre.jpg"},
         {"id": 21, "name": "Montre femme", "prix": "310.99", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
         {"id": 22, "name": "Montre femme", "prix": "350.70", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
-        {"id": 23, "name": "Montre homme", "prix": "250.50", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-festina-homme.jpg"}
+        {"id": 23, "name": "Montre homme", "prix": "250.50", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-festina-homme.jpg"},
+        {"id": 23, "name": "Montre homme", "prix": "250.50", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-quartz-hommes.jpg"}
+        
     ]
 }
 

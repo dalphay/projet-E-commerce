@@ -1,6 +1,6 @@
-<div [ngClass]="'product'">
-  <div [ngClass]="'productBox'" *ngFor="let produit of produits ">
-    <div class="container">
+<div [ngClass]="'container product'">
+  <div [ngClass]="'row productBox'" *ngFor="let produit of produits ">
+    <div class="col-sm">
       <div>
         <h4>
           <a [routerLink] = "['/produit-list', produit.id]">{{produit.name}}</a>
