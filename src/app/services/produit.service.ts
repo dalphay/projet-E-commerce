@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Produit } from '../entities/produit';
+
 import { Observable, of } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { LocalStorageService } from './local-storage.service';
@@ -17,7 +18,7 @@ export class ProduitService {
   }
 
   getAllProduit() {
-    return this.httpClient.get<Produit[]>(`http://localhost:3000/produits`).pipe(
+    return this.httpClient.get<Produit[]>(`http://localhost:3000/produits/`).pipe(
       tap(value => {
         this.produits = value;
       })

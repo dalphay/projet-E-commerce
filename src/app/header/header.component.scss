@@ -1,7 +1,7 @@
-/* .header {
-    background-color: #c10a27;
-    height: 80px;
-} */
+// .header {
+//     background-color: #c10a27;
+//     height: 80px;
+// }
 
 #search {
   width: 201px;
@@ -53,7 +53,7 @@
 }
 
 .navigation a:hover {
-  background: darken(deepskyblue, 2%);
+  background: darken(#c10a27, 2%);
 }
 
 @media all and (max-width: 800px) {

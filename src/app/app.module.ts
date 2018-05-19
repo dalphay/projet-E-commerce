@@ -14,6 +14,10 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PanierComponent } from './panier/panier.component';
+import { ProduitService } from 'src/app/services/produit.service';
+import { PanierService } from 'src/app/services/panier.service';
+
 
 
 @NgModule({
@@ -24,8 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     NotFoundComponent,
-    
+    PanierComponent,
   ],
+  
   imports: [
     BrowserModule,
     MatMenuModule,
@@ -34,7 +39,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule, 
     HttpClientModule   
   ],
-  providers: [],
+  providers: [
+    ProduitService
+    // PanierService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,4 +6,5 @@ export interface Produit {
     description:string,
     category:string,
     marque:string,
+    images: string
 }

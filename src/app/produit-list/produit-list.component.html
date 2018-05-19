@@ -1,18 +1,19 @@
-<div [ngClass]="'leftPanel'">
-  <h3>Store</h3>
+<div [ngClass]="'product'">
   <div [ngClass]="'productBox'" *ngFor="let produit of produits ">
-    <div>
+    <div class="container">
       <div>
         <h4>
-          <a href="#">{{produit.name}}</a>
+          <a [routerLink] = "['/produit-list', produit.id]">{{produit.name}}</a>
         </h4>
-        <h4>Price:{{produit.prix}}</h4>
+        <img class="img" src="../assets/{{produit.images}}" alt="images des produits">              
+        
+        <h5>Prix:{{produit.prix}}</h5>
         <p>{{produit.description}}</p>
         <p>{{produit.category}}</p>
-        <p>{{produit.marque}}</p>        
+        <p>{{produit.marque}}</p> 
       </div>
       <div>
-        <button type="button" (click)="addProduitInPanier(produit.id)">Add to Cart</button>
+        <button type="button" (click)="addProduitInPanier(produit.id)">Ajouter au panier</button>
       </div>
     </div>
   </div>

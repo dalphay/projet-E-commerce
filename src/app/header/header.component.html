@@ -10,13 +10,15 @@
             <span>Accueil</span>
           </a>
       </li>
-      <!--<li><a href="#">About</a></li>-->
+      <!--<li><a href="#">About</a></li>
+      <img class="img" src="../assets/{{panier.images}}" alt="images des produits">-->                       
+      
       <li>
-        <a routerLink=""><i class="fa fa-shopping-bag fa-1x"></i><br>
-          <span>Panier</span></a>
+        <a routerLink="/panier"><i class="fa fa-shopping-bag fa-1x d-block"></i>
+          <span class="d-block">Panier{{panier.length}}</span></a>
       </li>
       <li><a routerLink="">
-           <i class="fas fa-user-circle"></i><br>
+           <i class="fas fa-user-circle d-block"></i>
            <span>Compte</span>
           </a>
       </li>
