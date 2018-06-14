@@ -6,6 +6,8 @@
 
 .product {
     background-color: #fffefe;
+    margin-top: 30px;
+    margin-left: 80px;
     
 }
 
@@ -19,8 +21,24 @@
     padding: 8px;
 }
 
+.shadow:hover {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+ }
+ 
+
 .cursor {
     cursor: pointer;
+}
+
+.color { 
+    color: white;
+    background-color: #c10a27;
+}
+.color:hover {
+    color:  #ffffff;
+    background-color: #35e4e6;
 }
 
 a { 

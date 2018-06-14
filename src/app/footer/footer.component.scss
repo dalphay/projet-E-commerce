@@ -1,20 +1,27 @@
-.footer {
-    display: flex;
+.footer-background {
+    // display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 40px;
-    background-color: rgb(196, 193, 193);
+    background-color: #28272c;
     height: 280px;
+    top: 12px;
+
+}
+
+.footer {
+    top: 12px;
 }
 
 ul {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    // align-items: center;
     list-style-type: none; 
-    color: black;
+    color: #ffffff;
     margin-bottom: 12px;
     font-size: 16px;
+    top: 12px;
 
     /* font-weight: bold; */
     
