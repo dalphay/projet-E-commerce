@@ -1,6 +1,6 @@
-<div [ngClass]="'product'">
-    <div [ngClass]="'productBox'" *ngFor="let produit of panier ">
-      <div class="container">
+<div [ngClass]="'container product'">
+    <div [ngClass]="'row productBox'" *ngFor="let produit of panier; index as i">
+      <div class="col-sm">
         <div>
           <h4>
             <a [routerLink] = "['/panier', produit.id]">{{produit.name}}</a>
@@ -11,7 +11,7 @@
           <p>{{produit.marque}}</p> 
         </div>
         <div>
-          <button type="button" (click)="deleteProduitInPanier(produit.id)">supprimer</button>
+          <button class="cursor" type="button" (click)="deleteProduitInPanier(i)">supprimer</button>
         </div>       
       </div>
     </div>

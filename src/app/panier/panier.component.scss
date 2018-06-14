@@ -1,0 +1,35 @@
+.contenair {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:  wrap;    
+}
+
+.product {
+    background-color: #fffefe;
+    
+}
+
+.productBox{
+    display: inline-flex;
+    background-color: #7e7879;
+    color: white;
+    margin-top: 50px;
+    font-size: 17px;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+a { 
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    text-align: center; 
+}
+
+.img {
+    width: 200px;
+}

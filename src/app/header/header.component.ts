@@ -8,11 +8,12 @@ import { PanierService } from 'src/app/services/panier.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  
   panier : Produit [];
   constructor(private panierService: PanierService) { }
 
   ngOnInit() {
+
     this.panier = this.panierService.getAllProduits();
   }
-
 }

@@ -24,7 +24,7 @@
         {"id": 21, "name": "Montre femme", "prix": "310.99", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
         {"id": 22, "name": "Montre femme", "prix": "350.70", "description": "Description", "category": "Montre femme", "marque": "Festina", "images": "montre-femme.jpg"},
         {"id": 23, "name": "Montre homme", "prix": "250.50", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-festina-homme.jpg"},
-        {"id": 23, "name": "Montre homme", "prix": "250.50", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-quartz-hommes.jpg"}
+        {"id": 24, "name": "Montre homme", "prix": "250.50", "description": "Description", "category": "Montre homme", "marque": "Festina", "images": "montre-hublot.jpg"}
         
     ]
 }

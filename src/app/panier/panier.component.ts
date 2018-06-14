@@ -10,12 +10,21 @@ import { Produit } from '../entities/produit';
 })
 export class PanierComponent implements OnInit {
 
+  // produits:Produit[];
   panier : Produit [];
 
   constructor(private panierService: PanierService) { }
 
   ngOnInit() {
+    // this.dataService.getAll().subscribe(value => this.conproduits = value); 
     this.panier = this.panierService.getAllProduits(); 
+    console.log(this.panier)
+  }
+
+  deleteProduitInPanier(id){
+
+    this.panierService.deleteProduit(id);
+    
   }
 
 }

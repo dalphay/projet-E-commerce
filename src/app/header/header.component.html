@@ -1,27 +1,29 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
-<div class="header">
-  <ul class="navigation">
-      <a routerLink=""><span id="logo" >MyWatch</span></a>  
-      <input type="text" value="Recherche" id="search"> 
-      <li><a routerLink="">
-           <i class="fa fa-home fa-1x"></i><br>
-            <span>Accueil</span>
-          </a>
+<div class="header position-fixed w-100 px-0">
+  <div class="# ">
+    <ul class=" navigation ">
+       <a routerLink=""><span id="logo" >MyWatch</span></a>  
+      <input class="search text-justify  pl-2" type="text" value="Recherche" id="search"> 
+      <li>
+        <a routerLink="">
+          <i class="fa fa-home fa-1x d-block"></i>
+          <span>Accueil</span>
+        </a>
       </li>
       <!--<li><a href="#">About</a></li>
       <img class="img" src="../assets/{{panier.images}}" alt="images des produits">-->                       
-      
       <li>
         <a routerLink="/panier"><i class="fa fa-shopping-bag fa-1x d-block"></i>
-          <span class="d-block">Panier{{panier.length}}</span></a>
+          <span class="before d-block">Panier{{panier.length}}</span></a>
       </li>
-      <li><a routerLink="">
-           <i class="fas fa-user-circle d-block"></i>
-           <span>Compte</span>
-          </a>
+      <li>
+        <a routerLink="">
+          <i class="fas fa-user-circle d-block"></i>
+          <span class="before d-block">Compte</span>
+        </a>
       </li>
     </ul>
+  </div>  
 </div>
-

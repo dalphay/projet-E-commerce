@@ -23,8 +23,9 @@ export class ProduitListComponent implements OnInit {
     })
   }
 
-  addProduitInPanier(id) {
-    this.panier.addProduit(id)
+  addProduitInPanier(produit) {
+    
+    this.panier.addProduit(produit)
     console.log(this.panier.panier)
   }
 

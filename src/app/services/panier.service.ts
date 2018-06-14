@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Produit } from '../entities/produit';
+import { ProduitService } from '../services/produit.service';
+
+
 
 @Injectable({
   
@@ -8,9 +11,9 @@ import { Produit } from '../entities/produit';
 export class PanierService {
 
 
-  panier:Produit[];
+  panier:Produit[] = [];
   
-    constructor() {
+    constructor(private produitService: ProduitService) {
       if (this.read('panier') === null) {
         this.panier = [];
         this.save();
@@ -28,12 +31,13 @@ export class PanierService {
       return this.panier;
     }
 
-    deleteProduit(id:number):void {
+    deleteProduit(id:number):Produit[] {
       this.panier.splice(id, 1);
       this.save();
+      return this.panier;
     }
 
-    clearCart():Produit[] {
+    clearPanier():Produit[] {
       this.panier = [];
       this.save();
       return this.panier;
@@ -48,5 +52,4 @@ export class PanierService {
       let json = localStorage.getItem(itemName);
       return JSON.parse(json);
   }
-
 }
