@@ -4,7 +4,6 @@ import { Produit } from '../entities/produit';
 
 import { Observable, of } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import { LocalStorageService } from './local-storage.service';
 
 
 
@@ -12,12 +11,11 @@ import { LocalStorageService } from './local-storage.service';
   providedIn: 'root'
 })
 export class ProduitService {
-  localStorageService: LocalStorageService
   produits:Produit[]
   constructor(private httpClient: HttpClient) {
-    this.localStorageService = new LocalStorageService;
   }
 
+  /**method pour recupérer tous les produits */   
   getAllProduit() {
     return this.httpClient.get<Produit[]>(`http://localhost:3000/produits/`).pipe(
       tap(value => {
@@ -26,10 +24,13 @@ export class ProduitService {
     )
   }
 
+  /**method pour recupérer un produit par l'id */
+   
   getProduit(id) {
     return this.httpClient.get<Produit>(`http://localhost:3000/produits/${id}`).pipe(
       tap(value => {
-        this.localStorageService.setItem(`produit.${id}`, value);
+        // this.localStorageService.setItem(`produit.${id}`, value);
+        
       })
     )
   }

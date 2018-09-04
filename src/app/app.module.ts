@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PanierComponent } from './panier/panier.component';
 import { ProduitService } from 'src/app/services/produit.service';
 import { PanierService } from 'src/app/services/panier.service';
+import { UserAccountComponent } from './user-account/user-account.component';
 
 
 
@@ -29,6 +30,7 @@ import { PanierService } from 'src/app/services/panier.service';
     FooterComponent,
     NotFoundComponent,
     PanierComponent,
+    UserAccountComponent,
   ],
   
   imports: [
