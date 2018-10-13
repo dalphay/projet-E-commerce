@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { PanierComponent } from './panier/panier.component';
 import { ProduitService } from 'src/app/services/produit.service';
 import { PanierService } from 'src/app/services/panier.service';
 import { UserAccountComponent } from './user-account/user-account.component';
+import { FormulaireDbComponent } from './formulaire-db/formulaire-db.component';
 
 
 
@@ -31,6 +33,7 @@ import { UserAccountComponent } from './user-account/user-account.component';
     NotFoundComponent,
     PanierComponent,
     UserAccountComponent,
+    FormulaireDbComponent,
   ],
   
   imports: [
@@ -39,7 +42,8 @@ import { UserAccountComponent } from './user-account/user-account.component';
     BrowserAnimationsModule,
     MatCardModule,
     AppRoutingModule, 
-    HttpClientModule   
+    HttpClientModule,
+    FormsModule   
   ],
   providers: [
     ProduitService

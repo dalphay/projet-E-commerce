@@ -9,7 +9,7 @@ import { UserAccountComponent } from './user-account/user-account.component';
 
 const routes: Routes = [
   { path: '', component: ProduitListComponent },
-  { path: 'produit-fiche', component: ProduitFicheComponent },
+  { path: 'produit-fiche/:id', component: ProduitFicheComponent },
   { path: 'panier', component: PanierComponent }, 
   { path: 'user-account', component: UserAccountComponent },  
 

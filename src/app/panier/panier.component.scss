@@ -7,7 +7,7 @@
 .product {
     // background-color: #fffefe;
     // margin-top: 30px;
-    margin-left: 167px;
+    margin-left: 139px;
 }
 
 .productBox{
@@ -17,7 +17,9 @@
     margin-top: 80px;
     font-size: 17px;
     flex-wrap: wrap;
-    padding: 8px;
+    border-radius: 5px;
+    margin: 100px 2px 0;   
+    box-shadow:inset 0 0 10px #b1a6a6;
 }
 
 .shadow:hover {
@@ -34,10 +36,11 @@
 .color { 
     color: white;
     background-color: #c10a27;
+    border-radius: 1.25rem;
 }
 .color:hover {
     color:  #ffffff;
-    background-color: #35e4e6;
+    background-color: #099e7d;
 }
 
 a { 
