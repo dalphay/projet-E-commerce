@@ -25,7 +25,7 @@ export class UserAccountComponent implements OnInit {
   }
   submit() {
     this.service.login(this.password,this.email).subscribe(value =>{
-      this.router.navigate(["user",value.body.id])
+      this.router.navigate(["user",value.body])
       this.service.user = value.body;
       console.log(value.body);
     })
