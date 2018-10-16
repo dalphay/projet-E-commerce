@@ -19,7 +19,6 @@ import { PanierComponent } from './panier/panier.component';
 import { ProduitService } from 'src/app/services/produit.service';
 import { PanierService } from 'src/app/services/panier.service';
 import { UserAccountComponent } from './user-account/user-account.component';
-import { FormulaireDbComponent } from './formulaire-db/formulaire-db.component';
 
 
 
@@ -33,7 +32,6 @@ import { FormulaireDbComponent } from './formulaire-db/formulaire-db.component';
     NotFoundComponent,
     PanierComponent,
     UserAccountComponent,
-    FormulaireDbComponent,
   ],
   
   imports: [

@@ -17,8 +17,9 @@ export class ProduitService {
 
   /**method pour recupérer tous les produits */   
   getAllProduit() {
-    return this.httpClient.get<Produit[]>(`http://localhost:3000/produits/`).pipe(
+    return this.httpClient.get<Produit[]>(`http://localhost:8080/product/`).pipe(
       tap(value => {
+        console.log(value);
         this.produits = value;
       })
     )
@@ -27,7 +28,7 @@ export class ProduitService {
   /**method pour recupérer un produit par l'id */
    
   getProduit(id) {
-    return this.httpClient.get<Produit>(`http://localhost:3000/produits/${id}`).pipe(
+    return this.httpClient.get<Produit>(`http://localhost:8080/product/${id}`).pipe(
       tap(value => {
         // this.localStorageService.setItem(`produit.${id}`, value);
         

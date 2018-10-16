@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-account',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserAccountComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private service:UserService,private router : Router) { }
+  email:string;
+  password:string;
   ngOnInit() {
   }
-
+  check(event){
+    console.log(event);
+    this.email = event.target.value
+  }
+  check2(event){
+    this.password = event.target.value
+                                                                                                                            
+    console.log(event);
+  }
+  submit() {
+    this.service.login(this.password,this.email).subscribe(value =>{
+      this.router.navigate(["user",value.body.id])
+      this.service.user = value.body;
+      console.log(value.body);
+    })
+  }
 }

@@ -3,6 +3,7 @@ import { Produit } from '../entities/produit';
 import { ProduitService } from '../services/produit.service';
 import { PanierService } from 'src/app/services/panier.service';
 import { Router } from '@angular/router';
+import { UserService } from '../user.service';
 
 
 
@@ -14,14 +15,19 @@ import { Router } from '@angular/router';
 export class ProduitListComponent implements OnInit {
 
   produits : Produit[]
-
-  constructor(private service : ProduitService, private panier : PanierService, private router : Router) { }
+  user:Object = {};
+  constructor(private service : ProduitService,private UserService:UserService, private panier : PanierService, private router : Router) { }
 
   ngOnInit() {
     this.service.getAllProduit().subscribe(value => {
       this.produits = value;
       // console.log(value)
     })
+    if (this.UserService.user) {
+      this.user = this.UserService.user
+      console.log(this.user);
+      
+    }
   }
 
   addProduitInPanier(produit) {
@@ -29,10 +35,6 @@ export class ProduitListComponent implements OnInit {
     this.panier.addProduit(produit)
     // console.log(this.panier.panier)
   }
-
-  // deleteProduit(id){
-  //   this.panier.splice(id, 1)
-  // }
 
   goToFiche(id){
     this.router.navigate(["produit-fiche", id])
