@@ -1,0 +1,70 @@
+.contenair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.welcome {
+  position: relative;
+  top: 66px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  left: 84%;
+  color: #00a8ff;
+}
+
+.product {
+  margin-left: 139px;
+}
+
+.productBox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #7e7879;
+  color: white;
+  margin-top: 80px;
+  font-size: 17px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 5px;
+  margin: 100px 2px 0;
+  -webkit-box-shadow: inset 0 0 10px #b1a6a6;
+          box-shadow: inset 0 0 10px #b1a6a6;
+}
+
+.shadow:hover {
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.color {
+  color: white;
+  background-color: #c10a27;
+  border-radius: 1.25rem;
+}
+
+.color:hover {
+  color: #ffffff;
+  background-color: #099e7d;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+}
+
+.img {
+  width: 200px;
+}
+/*# sourceMappingURL=panier.component.css.map */
