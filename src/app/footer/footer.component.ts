@@ -13,3 +13,7 @@ export class FooterComponent implements OnInit {
   }
 
 }
+
+/***Footer 2 */
+
+

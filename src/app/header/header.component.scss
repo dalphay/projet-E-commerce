@@ -22,11 +22,11 @@
 .logo {
   position: relative;
   border-radius: 7px, solid;
-  background-color: #c10a27;
+  background-color: #4267b2;
   font-weight: bold;
   font-size: 35px;
   font-style: italic;
-  // width: 50px;
+  // width: 50px;#c10a27;
   height: 42px;
   margin-right: 233px;
   top: -13px;
@@ -34,9 +34,11 @@
 
 .slogan{
   position: relative;
-  color: #08eec0;
+  color: #fffdfd;
   top: -41px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .fa, fa-cart-arrow-down, fa-1x {
@@ -50,7 +52,7 @@
   list-style: none;
   margin: 0;
   height: 63px;
-  background: #c10a27;
+  background: #4267b2;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -68,7 +70,7 @@
 }
 
 .navigation a:hover {
-  background: darken(#c10a27, 2%);
+  background: darken(#4267b2, 2%);
 }
 
 @media (min-width: 1000px){

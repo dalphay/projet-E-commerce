@@ -12,6 +12,8 @@ import { map, tap } from 'rxjs/operators';
 })
 export class ProduitService {
   produits:Produit[]
+
+  
   constructor(private httpClient: HttpClient) {
   }
 
