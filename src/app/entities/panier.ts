@@ -1,8 +1,8 @@
-import { Produit } from "src/app/entities/produit";
+// import { Produit } from "src/app/entities/produit";
 
 export interface Panier {
     id:number,
-    articles: Produit,
+    articles: string,
     description: string,
     total:string,
 
